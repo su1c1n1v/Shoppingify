@@ -1,0 +1,16 @@
+﻿.container{
+    display:flex;
+}
+.menu{
+    height:100%;
+}
+.content{
+    height:100%;
+    width:80%;
+    background-color:aqua;
+}
+.page {
+    display: flex;
+    height:100%;
+    width:100%;
+}

@@ -22,6 +22,10 @@ namespace Shoppingify.Data.SqlRepository
             if (ctg != null)
             {
                 _context.Categories.Add(ctg);
+                for (int i = 0; i < 6; i++)
+                {
+                    continue;
+                }
             }
         }
 
