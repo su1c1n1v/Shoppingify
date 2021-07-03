@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shoppingify.Data.Context;
+using Shoppingify.Data.Interface;
+using Shoppingify.Data.SqlRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +38,10 @@ namespace Shoppingify
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>()
                 .AddDefaultTokenProviders();
+
+            //Setup scope
+            services.AddScoped<ICategoryRepository, SqlCategoriesRepository>();
+            services.AddScoped<IProductsRepository, SqlProductsRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
