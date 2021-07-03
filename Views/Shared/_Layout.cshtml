@@ -4,44 +4,122 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/Layout.css" />
+    <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="container p-0 d-flex h-100">
-        <div class="row h-100 col-2">
-            <div class="row w-100 align-items-start">
+    <div class="container">
+        <div class="menu-col">
+            <div class="top">
+                <img src="~/img/logo.svg" class="img" alt="Alternate Text" />
+            </div>
+            <div class="middle">
+                <div class="middle-block">
+                    <div class="center">
+                        @using (Html.BeginForm("Items", "Home", FormMethod.Get, new { @class = "login-form" }))
+                        {
+                            <button class="menu-button">
+                                <img src="~/img/format-list-bulleted.svg" class="img" alt="Alternate Text" />
+                            </button>
+                        }
+                    </div>
+
+                    <div class="center">
+                        @using (Html.BeginForm("Statistics", "Home", FormMethod.Get, new { @class = "login-form" }))
+                        {
+                            <button class="menu-button">
+                                <img src="~/img/rotate-left.svg" alt="Alternate Text" />
+                            </button>
+                        }
+                    </div>
+                    <div class="center">
+                        @using (Html.BeginForm("History", "Home", FormMethod.Get, new { @class = "login-form" }))
+                        {
+                            <button class="menu-button">
+                                <img src="~/img/chart-box-outline.svg"/>
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="img-rounded">
+                    <img src="~/img/cart-outline.svg" class="img" alt="Alternate Text" />
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Layout.css" />
+
+</head>
+<body>
+    <div class="container p-0 m-0 d-flex h-100">
+        <div class="row col-2 text-center mt-3 p-0 m-0">
+            <div class="row align-items-start col p-0 m-0">
                 <div class="col">
                     <img src="~/img/logo.svg" alt="Alternate Text" />
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col">
-                    <img src="~/img/logo.svg" alt="Alternate Text" />
+                <div class="col p-0">
+                    using (Html.BeginForm("Items", "Home", FormMethod.Get))
+                    {
+                        <button class="col" style="border:none;background-color:white;">
+                            <img src="~/img/format-list-bulleted.svg" alt="Alternate Text" />
+                        </button>
+                    }
                 </div>
-                <div class="col">
-                    <img src="~/img/logo.svg" alt="Alternate Text" />
+                <div class="col p-0">
+                    using (Html.BeginForm("Statistics", "Home", FormMethod.Get))
+                    {
+                        <button class="col" style="border:none;background-color:white;">
+                            <img src="~/img/rotate-left.svg" alt="Alternate Text" />
+                        </button>
+                    }
                 </div>
-                <div class="col">
-                    <img src="~/img/logo.svg" alt="Alternate Text" />
+                <div class="col p-0">
+                    using (Html.BeginForm("History", "Home", FormMethod.Get))
+                    {
+                        <button class="col new-button" style="">
+                            <img src="~/img/chart-box-outline.svg" />
+                        </button>
+                    }
                 </div>
             </div>
-            <div class="row align-items-end">
-                <div class="col">
-                    <img src="~/img/logo.svg" alt="Alternate Text" />
+            <div class="row align-items-end col mb-3">
+                <div class="col center">
+                    <img src="~/img/cart-outline.svg" class="center" alt="Alternate Text" />
                 </div>
             </div>
         </div>
-            @RenderBody()
+        <div class="container">
+            RenderBody()
+        </div>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+   RenderSection("Scripts", required: false)
 </body>
 </html>
+-->
