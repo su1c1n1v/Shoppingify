@@ -6,6 +6,7 @@
 html, body, #fullheight {
     min-height: 100% !important;
     height: 100%;
+    background-color: #FAFAFE;
 }
 
 .container{
@@ -14,24 +15,27 @@ html, body, #fullheight {
     width:100%;
 }
 .side-content {
-    height: 100%;
+    height: none;
     width: 20%;
     background-color: #FFF0DE;
 }
 .content {
     width: 76%;
     height: 100%;
-    background-color: #FAFAFE;
+    margin-left: 4%;
 }
 .menu-col {
     width: 4%;
     height: 100%;
+    position: fixed;
+    left:0;
 }
 .top{
     height:10%;
     width:100%;
     display:flex;
     align-content:center;
+    background-color:white;
 }
 .img{
     margin:auto;
@@ -41,6 +45,7 @@ html, body, #fullheight {
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 .bottom {
@@ -95,6 +100,7 @@ html, body, #fullheight {
         width: 40%;
         height: 100%;
         background-color: #FAFAFE;
+        margin-left: 10%;
     }
 
     .menu-col {
@@ -115,6 +121,7 @@ html, body, #fullheight {
         width: 50%;
         height: 100%;
         background-color: #FAFAFE;
+        margin-left: 10%;
     }
 
     .menu-col {
