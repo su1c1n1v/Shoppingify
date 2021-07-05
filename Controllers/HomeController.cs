@@ -18,13 +18,14 @@ namespace Shoppingify.Controllers
         private readonly ICategoryRepository _categoryRepo;
         private readonly IProductsRepository _productsRepo;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<IdentityUser> userManager,
-            ICategoryRepository categoryRepo, IProductsRepository productsRepo)
+        public HomeController(ILogger<HomeController> logger)
+        //public HomeController(ILogger<HomeController> logger, UserManager<IdentityUser> userManager,
+          //  ICategoryRepository categoryRepo, IProductsRepository productsRepo)
         {
             _logger = logger;
-            _userManager = userManager;
+            /*_userManager = userManager;
             _categoryRepo = categoryRepo;
-            _productsRepo = productsRepo;
+            _productsRepo = productsRepo;*/
         }
 
         public IActionResult Items()

@@ -40,8 +40,8 @@ namespace Shoppingify
                 .AddDefaultTokenProviders();
 
             //Setup scope
-            services.AddScoped<ICategoryRepository, SqlCategoriesRepository>();
-            services.AddScoped<IProductsRepository, SqlProductsRepository>();
+            //services.AddScoped<ICategoryRepository, SqlCategoriesRepository>();
+            //services.AddScoped<IProductsRepository, SqlProductsRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
