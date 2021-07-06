@@ -2,25 +2,23 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Shoppingify.Data.Interface;
-using Shoppingify.Models;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Shoppingify.Controllers
 {
-    public class HomeController : Controller
+    public class HistoricController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HistoricController> _logger;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ICategoryRepository _categoryRepo;
         private readonly IProductsRepository _productsRepo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HistoricController(ILogger<HistoricController> logger)
         //public HomeController(ILogger<HomeController> logger, UserManager<IdentityUser> userManager,
-          //  ICategoryRepository categoryRepo, IProductsRepository productsRepo)
+        //  ICategoryRepository categoryRepo, IProductsRepository productsRepo)
         {
             _logger = logger;
             /*_userManager = userManager;
@@ -28,17 +26,11 @@ namespace Shoppingify.Controllers
             _productsRepo = productsRepo;*/
         }
 
-        public IActionResult Items()
+        public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult History()
-        {
-            return View();
-        }
-
-        public IActionResult Statistics()
+        public IActionResult Historic()
         {
             return View();
         }

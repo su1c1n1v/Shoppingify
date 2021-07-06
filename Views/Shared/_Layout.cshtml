@@ -23,7 +23,7 @@
             <div class="middle">
                 <div class="middle-block">
                     <div class="center">
-                        @using (Html.BeginForm("Items", "Home", FormMethod.Get, new { @class = "login-form" }))
+                        @using (Html.BeginForm("Index", "Items", FormMethod.Get, new { @class = "login-form" }))
                         {
                             <button class="menu-button">
                                 <img src="~/img/format-list-bulleted.svg" class="img" alt="Alternate Text" />
@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="center">
-                        @using (Html.BeginForm("Statistics", "Home", FormMethod.Get, new { @class = "login-form" }))
+                        @using (Html.BeginForm("Index", "Statistics", FormMethod.Get, new { @class = "login-form" }))
                         {
                             <button class="menu-button">
                                 <img src="~/img/rotate-left.svg" alt="Alternate Text" />
@@ -40,7 +40,7 @@
                         }
                     </div>
                     <div class="center">
-                        @using (Html.BeginForm("History", "Home", FormMethod.Get, new { @class = "login-form" }))
+                        @using (Html.BeginForm("Index", "Historic", FormMethod.Get, new { @class = "login-form" }))
                         {
                             <button class="menu-button">
                                 <img src="~/img/chart-box-outline.svg" />

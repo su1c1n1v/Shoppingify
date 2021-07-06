@@ -67,7 +67,7 @@ namespace Shoppingify
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Items}/{id?}");
+                    pattern: "{controller=Items}/{action=Index}/{id?}");
             });
         }
     }
