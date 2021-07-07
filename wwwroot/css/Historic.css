@@ -60,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     font-family: Quicksand;
-    width: 50%;
+    width: 40%;
     margin:auto;
     justify-content:space-around;
 }
@@ -76,8 +76,17 @@ body {
     height: 50%;
     font-family: Quicksand;
     width: 50%;
-    border: 0.3vh solid lightblue;
+    border: 0.24vh solid lightblue;
     border-radius: 1rem;
     color: lightblue;
     background-color:white;
+}
+.historic-button2 {
+    height: 50%;
+    font-family: Quicksand;
+    width: 50%;
+    border: 0.24vh solid lightcoral;
+    border-radius: 1rem;
+    color: lightcoral;
+    background-color: white;
 }
