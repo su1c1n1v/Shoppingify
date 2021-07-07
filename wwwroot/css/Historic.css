@@ -1,1 +1,83 @@
 ﻿
+body {
+    
+}
+.body-historic{
+    width:100%;
+    height:100%;
+}
+.historic{
+    width:80%;
+    height:100%;
+    margin:auto;
+}
+.historic-header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.historic-title {
+    font-size: 1.3vw;
+    font-family: Quicksand;
+}
+.historic-title2 {
+    font-size: 0.9vw;
+    font-family: Quicksand;
+    height:3rem;
+}
+.historic-title3 {
+    width: 60%;
+    height: 100%;
+    font-family: Quicksand;
+    display: flex;
+    align-items: center;
+    padding-left:1rem;
+}
+.historic-body-content{
+    width:100%;
+    color:black;
+}
+.historic-item {
+    width: 100%;
+    height: 5vh;
+    border: 0.4vh solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    box-shadow: -4px -4px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    display:flex;
+    align-items:center;
+    margin-bottom:1rem;
+}
+.historic-item-content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.historic-calender {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Quicksand;
+    width: 50%;
+    margin:auto;
+    justify-content:space-around;
+}
+.historic-item-button {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    font-family: Quicksand;
+    align-items: center;
+    justify-content: space-around;
+}
+.historic-button {
+    height: 50%;
+    font-family: Quicksand;
+    width: 50%;
+    border: 0.3vh solid lightblue;
+    border-radius: 1rem;
+    color: lightblue;
+    background-color:white;
+}
