@@ -71,6 +71,7 @@ body {
     font-family: Quicksand;
     align-items: center;
     justify-content: space-around;
+    text-align:center;
 }
 .historic-button {
     height: 50%;
@@ -79,7 +80,7 @@ body {
     border: 0.24vh solid lightblue;
     border-radius: 1rem;
     color: lightblue;
-    background-color:white;
+    margin: auto;
 }
 .historic-button2 {
     height: 50%;
@@ -89,4 +90,54 @@ body {
     border-radius: 1rem;
     color: lightcoral;
     background-color: white;
+    margin:auto;
+}
+
+/*===============================================================*/
+@media only screen and (max-width: 1400px) {
+    .historic-title3 {
+        width: 40%;
+    }
+
+    .historic-item-content {
+        width: 60%;
+    }
+
+    .historic-title {
+        font-size: 5vw;
+    }
+
+    .historic-title2 {
+        font-size: 3vw;
+    }
+
+    .historic-button2 {
+        font-size: 1.2vw;
+    }
+
+    .historic-button {
+        font-size: 1.2vw;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .historic-title3 {
+        width: 40%;
+    }
+    .historic-item-content {
+        width: 60%;
+    }
+    .historic-title {
+        font-size: 5vw;
+    }
+    .historic-title2 {
+        font-size: 3vw;
+    }
+    .historic-button2 {
+        font-size:2vw;
+    }
+    .historic-button {
+        font-size: 2vw;
+    }
 }
